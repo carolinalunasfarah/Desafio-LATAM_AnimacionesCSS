@@ -1,4 +1,45 @@
 * {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    color: rgb(56, 56, 56)
+}
+
+/* nav */
+nav {
+    display: grid;
+    height: 6rem;
+    grid-area: nav;
+    min-width: 100vh;
+    grid-template-areas:
+    'logo nav-items';
+    background-color: rgba(56, 56, 56, 0.4);
+}
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    grid-area: logo;
+}
+
+.logo img {
+    height: 4rem;
+}
+
+/* nav-items */
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: nav-items;
+}
+
+.nav-items a {
+    padding-right: 2rem;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
 }
