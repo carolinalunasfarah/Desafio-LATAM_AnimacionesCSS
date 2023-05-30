@@ -51,6 +51,7 @@ main {
         "photos"
         "games";
     justify-content: center;
+    row-gap: 2rem;
     padding: 1rem;
 }
 
@@ -95,14 +96,6 @@ main {
     gap: 2rem;
 }
 
-.title {
-    grid-area: title;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
-
 .e1 {
     grid-area: e1;
 }
@@ -122,13 +115,21 @@ main {
     grid-area: e6;
 }
 
+.title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
 /* photos */
 #photos {
     grid-area: photos;
     display: grid;
     flex-direction: row;
     grid-template-areas:
-    "titlef titlef titlef"
+    "title title title"
     "f1 f2 f3"
     "f4 f5 f6";
     gap: 2rem;
@@ -153,12 +154,33 @@ main {
     grid-area: f6;
 }
 
-.titlef {
-    grid-area: titlef;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin-top: 2rem;
-}
 /* games */
+#games {
+    grid-area: games;
+    display: grid;
+    flex-direction: row;
+    grid-template-areas:
+    "title title title"
+    "g1 g2 g3"
+    "g4 g5 g6";
+    gap: 2rem;
+}
+
+.g1{
+    grid-area: g1;
+}
+.g2{
+    grid-area: g2;
+}
+.g3{
+    grid-area: g3;
+}
+.g4{
+    grid-area: g4;
+}
+.g5{
+    grid-area: g5;
+}
+.g6{
+    grid-area: g6;
+}
