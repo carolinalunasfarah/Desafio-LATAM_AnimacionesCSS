@@ -184,3 +184,29 @@ main {
 .g6{
     grid-area: g6;
 }
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+footer h1 {
+    font-size: 16px;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    margin: 1rem;
+    transform: scale(2);
+}
