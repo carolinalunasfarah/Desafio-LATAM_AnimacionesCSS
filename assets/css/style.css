@@ -7,7 +7,7 @@
 /* nav */
 nav {
     display: grid;
-    height: 6rem;
+    height: 5rem;
     grid-area: nav;
     min-width: 100vh;
     grid-template-areas:
@@ -42,4 +42,75 @@ nav {
     text-decoration: none;
     font-weight: 800;
     font-size: 20px;
+}
+
+/* main */
+main {
+    display: grid;
+    grid-template-areas: 
+    'embroidery'
+    'photos'
+    'games';
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 28rem;
+    min-width: 18rem;
+    border-radius: 5%;
+}
+
+.card img {
+    width: 15rem;
+    border-radius: 5%;
+    filter: saturate(0%);
+}
+
+.card img:hover {
+    filter: none;
+    transform: scale(1.5);
+}
+
+/* embroidery */
+.embroidery {
+    grid-area: embroidery;
+    display: grid;
+    flex-direction: row;
+    grid-template-areas: 
+    'e1 e2 e3'
+    'e4 e5 e6';
+    gap: 5rem;
+}
+.e1 {
+    grid-area: e1;
+}
+.e2 {
+    grid-area: e2;
+}
+.e3 {
+    grid-area: e3;
+}
+.e4 {
+    grid-area: e4;
+}
+.e5 {
+    grid-area: e5;
+}
+.e6 {
+    grid-area: e6;
+}
+
+/* photos */
+.photos {
+    grid-area: photos;
+}
+
+/* games */ 
+.games {
+    grid-area: games;
 }
