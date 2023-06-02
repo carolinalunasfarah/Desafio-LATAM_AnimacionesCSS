@@ -11,7 +11,7 @@ nav {
     grid-area: nav;
     max-width: 100vh;
     grid-template-areas: "logo none nav-items";
-    grid-template-columns: 1fr 3fr 8fr;
+    grid-template-columns: 1fr 4fr 8fr;
     background-color: rgba(70, 0, 140, 0.3);
 }
 
@@ -48,10 +48,11 @@ nav {
     flex-direction: row;
     align-items: center;
     grid-area: nav-items;
+    padding-right: 1rem;
 }
 
 .nav-items a {
-    padding-right: 2rem;
+    margin-left: 1rem;
     text-decoration: none;
     font-weight: 800;
     color: rgba(70, 0, 140);
@@ -75,11 +76,15 @@ main {
 }
 
 /* card */
+
+.card {
+    object-fit: cover;
+}
 .card img {
     width: 100%;
+    height: 100%;
     border-radius: 10%;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(56, 56, 56, 0.05);
-    object-fit: cover;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(56, 56, 56, 0.4);
     filter: saturate(0%);
     transition: 2s ease;
 }
@@ -124,23 +129,18 @@ main {
 .f1 {
     grid-area: f1;
 }
-
 .f2 {
     grid-area: f2;
 }
-
 .f3 {
     grid-area: f3;
 }
-
 .f4 {
     grid-area: f4;
 }
-
 .f5 {
     grid-area: f5;
 }
-
 .f6 {
     grid-area: f6;
 }
@@ -163,23 +163,18 @@ main {
 .e1 {
     grid-area: e1;
 }
-
 .e2 {
     grid-area: e2;
 }
-
 .e3 {
     grid-area: e3;
 }
-
 .e4 {
     grid-area: e4;
 }
-
 .e5 {
     grid-area: e5;
 }
-
 .e6 {
     grid-area: e6;
 }
@@ -202,28 +197,22 @@ main {
 .g1 {
     grid-area: g1;
 }
-
 .g1:hover {
     filter: brightness(2);
     transition: 2s ease;
 }
-
 .g2 {
     grid-area: g2;
 }
-
 .g3 {
     grid-area: g3;
 }
-
 .g4 {
     grid-area: g4;
 }
-
 .g5 {
     grid-area: g5;
 }
-
 .g6 {
     grid-area: g6;
 }
@@ -277,18 +266,24 @@ footer a:hover {
     }
 
     .nav-items {
+        padding-right: 0;
         flex-direction: column;
         justify-content: center;
     }
 
     .nav-items a {
         padding-bottom: 2rem;
+        margin-left: 0;
     }
 
     /* logo */
+    .logo {
+        margin: 0;
+    }
+    
     .logo img {
         height: 2.5rem;
-        padding: 2rem;
+        margin: 2rem;
     }
 
     /* main */
@@ -333,5 +328,9 @@ footer a:hover {
     footer {
         margin-top: 0rem;
         min-width: 100vh;
+    }
+
+    footer h1 {
+        font-size: 16px;
     }
 }
