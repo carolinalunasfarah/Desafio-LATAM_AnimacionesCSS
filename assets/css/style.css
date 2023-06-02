@@ -67,11 +67,6 @@ main {
 .card-e img {
     width: 100%;
     border-radius: 5%;
-    filter: saturate(0%);
-}
-
-.card-e img:hover {
-    filter: none;
 }
 
 .card {
@@ -86,11 +81,6 @@ main {
 .card img {
     width: 100%;
     border-radius: 5%;
-    filter: saturate(0%);
-}
-
-.card img:hover {
-    filter: none;
 }
 
 /* section title */
@@ -121,66 +111,78 @@ main {
     grid-area: f1;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .f1:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .f2 {
     grid-area: f2;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .f2:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .f3 {
     grid-area: f3;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .f3:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .f4 {
     grid-area: f4;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .f4:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .f5 {
     grid-area: f5;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .f5:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .f6 {
     grid-area: f6;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .f6:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 /* embroidery */
@@ -202,11 +204,13 @@ main {
     grid-area: e1;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .e1:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .e2 {
@@ -218,50 +222,59 @@ main {
 .e2:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .e3 {
     grid-area: e3;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .e3:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .e4 {
     grid-area: e4;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .e4:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .e5 {
     grid-area: e5;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .e5:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .e6 {
     grid-area: e6;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .e6:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 /* games */
@@ -283,66 +296,78 @@ main {
     grid-area: g1;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .g1:hover {
-    filter: none;
+    filter: brightness(2);
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .g2 {
     grid-area: g2;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .g2:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .g3 {
     grid-area: g3;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .g3:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .g4 {
     grid-area: g4;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .g4:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .g5 {
     grid-area: g5;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .g5:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 .g6 {
     grid-area: g6;
     object-fit: cover;
     filter: saturate(0%);
+    transition: 2s ease;
 }
 
 .g6:hover {
     filter: none;
     border-radius: 15%;
+    transition: 2s ease;
 }
 
 /* footer */
