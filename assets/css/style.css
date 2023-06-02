@@ -22,6 +22,7 @@ nav {
     justify-content: center;
     grid-area: logo;
     animation: rotate 2s ease both;
+    margin-left: 1rem;
 }
 
 .logo img {
@@ -292,7 +293,7 @@ footer a:hover {
 
     /* main */
     main {
-        min-width: 100%;
+        width: 100%;
     }
 
     /* photos */
