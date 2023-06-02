@@ -11,7 +11,7 @@ nav {
     grid-area: nav;
     max-width: 100vh;
     grid-template-areas: "logo none nav-items";
-    grid-template-columns: 1fr auto 8fr;
+    grid-template-columns: 1fr 3fr 8fr;
     background-color: rgba(70, 0, 140, 0.3);
 }
 
@@ -46,7 +46,6 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
     grid-area: nav-items;
 }
 
@@ -75,22 +74,20 @@ main {
 }
 
 /* card */
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5%;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(56, 56, 56, 0.15);
-}
-
 .card img {
     width: 100%;
-    border-radius: 5%;
+    border-radius: 10%;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(56, 56, 56, 0.05);
+    object-fit: cover;
+    filter: saturate(0%);
+    transition: 2s ease;
 }
 
-.card:hover {
+.card img:hover {
     transform: scale(1.05);
-    transition: 1s ease;
+    transition: 2s ease;
+    filter: none;
+    transition: 2s ease;
 }
 
 /* section title */
@@ -125,80 +122,26 @@ main {
 
 .f1 {
     grid-area: f1;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.f1:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .f2 {
     grid-area: f2;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.f2:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .f3 {
     grid-area: f3;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.f3:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .f4 {
     grid-area: f4;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.f4:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .f5 {
     grid-area: f5;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.f5:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .f6 {
     grid-area: f6;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.f6:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 /* embroidery */
@@ -218,79 +161,26 @@ main {
 
 .e1 {
     grid-area: e1;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.e1:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .e2 {
     grid-area: e2;
-    object-fit: cover;
-    filter: saturate(0%);
-}
-
-.e2:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .e3 {
     grid-area: e3;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.e3:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .e4 {
     grid-area: e4;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.e4:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .e5 {
     grid-area: e5;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.e5:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .e6 {
     grid-area: e6;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.e6:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 /* games */
@@ -310,80 +200,31 @@ main {
 
 .g1 {
     grid-area: g1;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
 }
 
 .g1:hover {
     filter: brightness(2);
-    border-radius: 15%;
     transition: 2s ease;
 }
 
 .g2 {
     grid-area: g2;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.g2:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .g3 {
     grid-area: g3;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.g3:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .g4 {
     grid-area: g4;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.g4:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .g5 {
     grid-area: g5;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.g5:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 .g6 {
     grid-area: g6;
-    object-fit: cover;
-    filter: saturate(0%);
-    transition: 2s ease;
-}
-
-.g6:hover {
-    filter: none;
-    border-radius: 15%;
-    transition: 2s ease;
 }
 
 /* footer */
@@ -436,6 +277,7 @@ footer a:hover {
 
     .nav-items {
         flex-direction: column;
+        justify-content: center;
     }
 
     .nav-items a {
@@ -450,8 +292,7 @@ footer a:hover {
 
     /* main */
     main {
-        width: 100%;
-        grid-template-columns: repeat (3,1fr);
+        min-width: 100%;
     }
 
     /* photos */
