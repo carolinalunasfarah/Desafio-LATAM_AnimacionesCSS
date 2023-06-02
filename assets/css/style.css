@@ -11,21 +11,34 @@ nav {
     grid-area: nav;
     min-width: 100vh;
     grid-template-areas: "logo none nav-items";
-    grid-template-columns: 1fr auto 5fr;
-    background-color: rgba(56, 56, 56, 0.4);
+    grid-template-columns: 1fr auto 8fr;
+    background-color: rgba(70, 0, 140, 0.3);
 }
 
 /* logo */
 .logo {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 1rem;
+    justify-content: center;
     grid-area: logo;
+    animation: rotate 2s ease both;
 }
 
 .logo img {
     height: 1.8rem;
+}
+
+.logo img:hover {
+    filter: blur(0.08rem);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* nav-items */
@@ -41,34 +54,26 @@ nav {
     padding-right: 2rem;
     text-decoration: none;
     font-weight: 800;
+    color: rgba(70, 0, 140);
+}
+
+.nav-items a:hover {
+    transition: 1s ease;
+    color: rgb(117, 17, 217);
 }
 
 /* main */
 main {
     display: grid;
     grid-template-areas:
-        'photos'
-        'embroidery'
-        'games';
+        "photos"
+        "embroidery"
+        "games";
     gap: 2rem;
     padding: 1rem;
 }
 
 /* card */
-.card-e {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 18rem;
-    border-radius: 5%;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(56, 56, 56, 0.15);
-}
-
-.card-e img {
-    width: 100%;
-    border-radius: 5%;
-}
-
 .card {
     display: flex;
     justify-content: center;
@@ -83,14 +88,26 @@ main {
     border-radius: 5%;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    transition: 1s ease;
+}
+
 /* section title */
 .title {
     grid-area: title;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    width: 100%;
+    border-bottom: 0.1rem solid rgba(70, 0, 140);
 }
+
+.title h1 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
 
 /* photos */
 #photos {
@@ -192,10 +209,10 @@ main {
     max-width: 100vh;
     justify-content: center;
     grid-template-areas:
-        'title title'
-        'e1 e2'
-        'e4 e5'
-        'e3 e6';
+        "title title"
+        "e1 e2"
+        "e4 e5"
+        "e3 e6";
     gap: 1rem;
     padding: 1rem;
 }
@@ -376,22 +393,26 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(56, 56, 56);
+    background-color: rgba(70, 0, 140, 0.3);
     height: 3rem;
     margin-top: 1rem;
 }
 
 footer h1 {
     font-size: 14px;
-    color: white;
 }
 
 footer a {
     text-decoration: none;
-    color: white;
+}
+
+footer a:hover {
+    color: rgba(117, 17, 217, 0.7);
+    transition: 1s ease;
 }
 
 .icon {
     margin: 0.5rem;
     transform: scale(1.5);
 }
+
