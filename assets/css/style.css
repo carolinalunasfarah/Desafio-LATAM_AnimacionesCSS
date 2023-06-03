@@ -21,7 +21,7 @@ nav {
     align-items: center;
     justify-content: center;
     grid-area: logo;
-    animation: rotate 2s ease both;
+    animation: rotate 3s ease both;
     margin-left: 1rem;
 }
 
@@ -30,15 +30,22 @@ nav {
 }
 
 .logo img:hover {
-    filter: blur(0.08rem);
+    filter: blur(0.08rem) opacity(50%);
 }
 
 @keyframes rotate {
     0% {
         transform: rotate(0);
     }
-    100% {
+    25%, 75% {
+        filter: opacity(50%);
+    }
+    50% {
         transform: rotate(360deg);
+        filter: opacity(15%);
+    }
+    100% {
+        transform: rotate(0);
     }
 }
 
@@ -58,7 +65,12 @@ nav {
     color: rgba(70, 0, 140);
 }
 
-.nav-items a:hover {
+.nav-items h1 {
+    color: rgba(70, 0, 140);
+    font-size: 16px;
+}
+
+.nav-items h1:hover {
     transition: 1s ease;
     color: rgb(117, 17, 217);
 }
@@ -230,7 +242,8 @@ footer {
 }
 
 footer h1 {
-    font-size: 14px;
+    font-size: 12px;
+    color: rgba(70, 0, 140);
 }
 
 footer a {
@@ -240,6 +253,12 @@ footer a {
 footer a:hover {
     color: rgba(117, 17, 217, 0.7);
     transition: 1s ease;
+}
+
+footer h1:hover {
+    transition: 1s ease;
+    color: rgb(117, 17, 217);
+    cursor: default;
 }
 
 .icon {
@@ -275,6 +294,10 @@ footer a:hover {
     .nav-items a {
         padding-bottom: 2rem;
         margin-left: 0;
+    }
+
+    .nav-items h1 {
+        font-size: 18px;
     }
 
     /* logo */
