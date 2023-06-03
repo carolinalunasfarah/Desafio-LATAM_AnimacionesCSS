@@ -1,7 +1,7 @@
 * {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    color: rgb(56, 56, 56);
+    color: rgba(70, 0, 140);
 }
 
 /* nav */
@@ -12,7 +12,7 @@ nav {
     max-width: 100vh;
     grid-template-areas: "logo none nav-items";
     grid-template-columns: 1fr 4fr 8fr;
-    background-color: rgba(70, 0, 140, 0.3);
+    background-color: rgba(70, 0, 140, 0.5);
 }
 
 /* logo */
@@ -56,24 +56,22 @@ nav {
     flex-direction: row;
     align-items: center;
     grid-area: nav-items;
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
 
 .nav-items a {
     margin-left: 1rem;
     text-decoration: none;
     font-weight: 800;
-    color: rgba(70, 0, 140);
 }
 
 .nav-items h1 {
-    color: rgba(70, 0, 140);
     font-size: 16px;
 }
 
 .nav-items h1:hover {
     transition: 1s ease;
-    color: rgb(117, 17, 217);
+    color: rgba(253, 255, 46, 0.9);
 }
 
 /* main */
@@ -95,8 +93,8 @@ main {
 .card img {
     width: 100%;
     border-radius: 10%;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(56, 56, 56, 0.4);
-    filter: saturate(0%);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(56, 56, 56, 0.45);
+    filter: grayscale(100%);
     transition: 2s ease;
 }
 
@@ -104,7 +102,6 @@ main {
     transform: scale(1.05);
     transition: 2s ease;
     filter: none;
-    transition: 2s ease;
 }
 
 /* section title */
@@ -113,36 +110,32 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100vh;
-    background-color: rgba(70, 0, 140, 0.3);
+    max-width: 100%;
+    background-color: rgba(70, 0, 140, 0.2);
     height: 2.3rem;
-}
-
-.title h1:hover {
-    transition: 2s ease;
-    color: rgb(117, 17, 217);
-    cursor: default;
 }
 
 .title h1 {
     font-size: 20px;
     margin-bottom: 0.5rem;
-    color: rgba(70, 0, 140);
+}
+
+.title h1:hover {
+    transition: 4s ease;
+    color: rgb(117, 17, 217);
+    cursor: default;
 }
 
 .title:hover {
-    animation: bg-color 3s ease 1 alternate both;
+    animation: bg-color 4s ease 1 alternate both;
 }
 
 @keyframes bg-color {
-    0% {
-        background-color: rgba(70, 0, 140, 0.3);
+    0%, 100% {
+        background-color: rgba(70, 0, 140, 0.2);
     }
     50% {
-        background-color: rgba(117, 17, 217, 0.3);
-    }
-    100% {
-        background-color: rgba(253, 255, 46, 0.3);
+        background-color: rgba(253, 255, 46, 0.5);
     }
 }
 
@@ -150,7 +143,7 @@ main {
 #photos {
     grid-area: photos;
     display: grid;
-    max-width: 100vh;
+    max-width: 100%;
     justify-content: center;
     grid-template-areas:
         "title title"
@@ -185,7 +178,7 @@ main {
 #embroidery {
     grid-area: embroidery;
     display: grid;
-    max-width: 100vh;
+    max-width: 100%;
     justify-content: center;
     grid-template-areas:
         "title title"
@@ -220,7 +213,7 @@ main {
 #games {
     grid-area: games;
     display: grid;
-    max-width: 100vh;
+    max-width: 100%;
     justify-content: center;
     grid-template-areas:
         "title title"
@@ -261,15 +254,13 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(70, 0, 140, 0.3);
+    background-color: rgba(70, 0, 140, 0.5);
     height: 3rem;
-    margin-top: 1rem;
     grid-area: footer;
 }
 
 footer h1 {
-    font-size: 12px;
-    color: rgba(70, 0, 140);
+    font-size: 14px;
 }
 
 footer a {
@@ -277,13 +268,13 @@ footer a {
 }
 
 footer a:hover {
-    color: rgba(117, 17, 217, 0.7);
-    transition: 1s ease;
+    color: rgba(253, 255, 46, 0.8);
+    transition: 2s ease;
 }
 
 footer h1:hover {
-    transition: 1s ease;
-    color: rgb(117, 17, 217);
+    transition: 2s ease;
+    color: rgba(253, 255, 46, 0.8);
     cursor: default;
 }
 
@@ -312,7 +303,7 @@ footer h1:hover {
     }
 
     .nav-items {
-        padding-right: 0;
+        margin-right: 0;
         flex-direction: column;
         justify-content: center;
     }
@@ -336,14 +327,8 @@ footer h1:hover {
         margin: 2rem;
     }
 
-    /* card */
-    .card img:hover {
-        transform: scale(1.05);
-    }
-
     /* title */
     .title {
-        min-width: 100%;
         height: 3rem;
     }
 
@@ -353,16 +338,13 @@ footer h1:hover {
 
     /* photos */
     #photos {
-        justify-content: center;
         grid-template-areas:
             "title title"
             "f4 f1"
             "f6 f1"
             "f2 f3"
             "f5 f3";
-        max-width: 100%;
         grid-template-columns: 1fr 2fr;
-        gap: 2rem;
     }
 
     .f1, .f3 {
@@ -380,16 +362,13 @@ footer h1:hover {
 
     /* embroidery */
     #embroidery {
-        justify-content: center;
         grid-template-areas:
             "title title"
             "e1 e2"
             "e1 e4"
             "e5 e3"
             "e5 e6";
-        max-width: 100%;
         grid-template-columns: 2fr 1fr;
-        gap: 2rem;
     }
 
     .e1, .e2, .e3, .e4, .e5, .e6 {
@@ -424,14 +403,12 @@ footer h1:hover {
 
     /* games */
     #games {
-        justify-content: center;
         grid-template-areas:
             "title title"
             "g5 g1"
             "g3 g1"
             "g6 g4"
             "g2 g4";
-        max-width: 100%;
         grid-template-columns: 1fr 2fr;
     }
 
@@ -450,7 +427,6 @@ footer h1:hover {
 
     /* footer */
     footer {
-        margin-top: 0rem;
         min-width: 100vh;
     }
 
