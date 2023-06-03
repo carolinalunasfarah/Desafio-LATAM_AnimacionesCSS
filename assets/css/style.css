@@ -37,7 +37,8 @@ nav {
     0% {
         transform: rotate(0);
     }
-    25%, 75% {
+    25%,
+    75% {
         filter: opacity(50%);
     }
     50% {
@@ -83,8 +84,7 @@ main {
         "photos"
         "embroidery"
         "games";
-    gap: 2rem;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 /* card */
@@ -115,12 +115,36 @@ main {
     justify-content: center;
     align-items: center;
     max-width: 100vh;
-    border-bottom: 0.1rem solid rgba(70, 0, 140);
+    background-color: rgba(70, 0, 140, 0.3);
+    height: 2.3rem;
+}
+
+.title h1:hover {
+    transition: 2s ease;
+    color: rgb(117, 17, 217);
+    cursor: default;
 }
 
 .title h1 {
     font-size: 20px;
     margin-bottom: 0.5rem;
+    color: rgba(70, 0, 140);
+}
+
+.title:hover {
+    animation: bg-color 3s ease 1 alternate both;
+}
+
+@keyframes bg-color {
+    0% {
+        background-color: rgba(70, 0, 140, 0.3);
+    }
+    50% {
+        background-color: rgba(117, 17, 217, 0.3);
+    }
+    100% {
+        background-color: rgba(253, 255, 46, 0.3);
+    }
 }
 
 /* photos */
@@ -304,7 +328,7 @@ footer h1:hover {
     .logo {
         margin: 0;
     }
-    
+
     .logo img {
         height: 2.5rem;
         margin: 2rem;
@@ -313,6 +337,7 @@ footer h1:hover {
     /* title */
     .title {
         min-width: 100%;
+        height: 3rem;
     }
 
     .title h1 {
@@ -326,7 +351,6 @@ footer h1:hover {
             "title title title"
             "f1 f4 f6"
             "f2 f3 f5";
-        gap: 2rem;
         max-width: 100%;
     }
 
@@ -337,7 +361,6 @@ footer h1:hover {
             "title title title"
             "e1 e2 e4"
             "e5 e3 e6";
-        gap: 2rem;
         max-width: 100%;
     }
 
@@ -348,7 +371,6 @@ footer h1:hover {
             "title title title"
             "g1 g2 g3"
             "g4 g5 g6";
-        gap: 2rem;
         max-width: 100%;
     }
 
