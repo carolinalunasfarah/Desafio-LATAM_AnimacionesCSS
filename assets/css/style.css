@@ -10,8 +10,8 @@ nav {
     height: 3rem;
     grid-area: nav;
     max-width: 100vh;
-    grid-template-areas: "logo none nav-items";
-    grid-template-columns: 1fr 4fr 8fr;
+    grid-template-areas: "logo page-title nav-items";
+    grid-template-columns: 1fr 2fr 3fr;
     background-color: rgba(70, 0, 140, 0.5);
 }
 
@@ -20,13 +20,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     grid-area: logo;
-    animation: rotate 3s ease both;
-    margin-left: 1rem;
 }
 
 .logo img {
     height: 1.8rem;
+    animation: rotate 3s ease both;
 }
 
 .logo img:hover {
@@ -50,6 +50,25 @@ nav {
     }
 }
 
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: page-title;
+    font-size: 18px;
+}
+
+.page-title h1 {
+    color: rgba(214, 217, 17, 0.85);
+    font-family: 'Satisfy', cursive;
+}
+
+.page-title h1:hover {
+    transition: 1s ease;
+    cursor: default;
+    filter: blur(0.08rem);
+}
+
 /* nav-items */
 .nav-items {
     display: flex;
@@ -66,7 +85,7 @@ nav {
 }
 
 .nav-items h1 {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .nav-items h1:hover {
@@ -131,7 +150,8 @@ main {
 }
 
 @keyframes bg-color {
-    0%, 100% {
+    0%,
+    100% {
         background-color: rgba(70, 0, 140, 0.2);
     }
     50% {
@@ -318,13 +338,15 @@ footer h1:hover {
     }
 
     /* logo */
-    .logo {
-        margin: 0;
-    }
-
     .logo img {
         height: 2.5rem;
         margin: 2rem;
+    }
+
+    /* page title */
+    .page-title {
+        font-size: 22px;
+        padding-bottom: 2rem;
     }
 
     /* title */
@@ -347,7 +369,8 @@ footer h1:hover {
         grid-template-columns: 1fr 2fr;
     }
 
-    .f1, .f3 {
+    .f1,
+    .f3 {
         display: flex;
         justify-content: center;
     }
@@ -371,7 +394,12 @@ footer h1:hover {
         grid-template-columns: 2fr 1fr;
     }
 
-    .e1, .e2, .e3, .e4, .e5, .e6 {
+    .e1,
+    .e2,
+    .e3,
+    .e4,
+    .e5,
+    .e6 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -412,7 +440,8 @@ footer h1:hover {
         grid-template-columns: 1fr 2fr;
     }
 
-    .g1, .g4 {
+    .g1,
+    .g4 {
         display: flex;
         align-items: center;
     }
